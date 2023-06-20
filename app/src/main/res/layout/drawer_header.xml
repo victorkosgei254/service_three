@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fitsSystemWindows="true"
+    android:background="#673AB7">
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/header"
+        android:id="@+id/image_header"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:padding="10dp"
+        android:layout_marginTop="10dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/header_label"
+        android:text="Service Counter"
+        android:theme="@style/ThemeOverlay.MaterialComponents.Dark.ActionBar"
+        android:textSize="24sp"
+        app:layout_constraintTop_toBottomOf="@id/image_header"
+        app:layout_constraintLeft_toLeftOf="@id/image_header"
+        app:layout_constraintRight_toRightOf="@id/image_header"
+        android:layout_marginTop="10dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/header_desc"
+        android:text="Simple counter service with a bounded service"
+        android:theme="@style/ThemeOverlay.MaterialComponents.Dark.ActionBar"
+        app:layout_constraintTop_toBottomOf="@id/header_label"
+        app:layout_constraintRight_toRightOf="@id/header_label"
+        app:layout_constraintLeft_toLeftOf="@id/header_label"
+        android:layout_marginTop="5dp"
+        android:padding="5dp"
+        android:textAlignment="center"
+        />
+    
+</androidx.constraintlayout.widget.ConstraintLayout>
